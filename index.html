@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillForge — Build Skills. Build the Future.</title>
+    <meta name="description" content="SkillCraft Technology Web Development Internship Task 01: Modern, professional, responsive landing page with an interactive navigation menu built with HTML5, CSS3, and Vanilla JavaScript." />
+    
+    <!-- OpenGraph & Social Sharing Meta -->
+    <meta property="og:title" content="SkillForge — Build Skills. Build the Future." />
+    <meta property="og:description" content="SkillCraft Technology Web Development Internship Task 01: Interactive navigation menu and modern tech landing page." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ======================================================================
+         Fixed Interactive Navigation Bar
+         ====================================================================== -->
+    <header class="navbar" id="navbar" role="banner">
+      <div class="container nav-container">
+        <!-- Brand Wordmark -->
+        <a href="#home" class="nav-brand" aria-label="SkillForge Homepage">
+          <div class="brand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span class="brand-name">SkillForge<span class="brand-dot">.</span></span>
+        </a>
+
+        <!-- Desktop & Mobile Navigation Menu -->
+        <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+          <div class="nav-item">
+            <a href="#home" class="nav-link active" aria-current="page">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="#features" class="nav-link">Features</a>
+          </div>
+          <div class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </div>
+          <div class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </div>
+          <div class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </nav>
+
+        <!-- Right Action Button & Mobile Hamburger -->
+        <div class="nav-actions">
+          <a href="#contact" class="btn-nav">Get Started</a>
+        </div>
+
+        <button 
+          class="hamburger-btn" 
+          id="hamburgerBtn" 
+          aria-label="Open navigation menu" 
+          aria-expanded="false" 
+          aria-controls="navMenu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ====================================================================
+           Hero Section
+           ==================================================================== -->
+      <section class="hero-section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <div class="hero-badge">
+              <span class="hero-badge-pulse"></span>
+              <span>Technology Skills Accelerator</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Build Skills. <br />
+              <span class="text-gradient">Build the Future.</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+              Learn, create, and transform your ideas into real-world digital experiences. Master modern engineering disciplines through high-impact hands-on software development.
+            </p>
+            
+            <div class="hero-buttons">
+              <a href="#features" class="btn btn-primary">
+                Explore Features
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <!-- Pure CSS/SVG Tech Graphic Mockup -->
+          <div class="hero-graphic reveal reveal-delay-2">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="window-title">SkillForgeEngine.ts</span>
+              </div>
+              <pre class="window-body"><code><span class="code-comment">// Initialize next-gen engineering workflow</span>
+<span class="code-keyword">import</span> { Developer, Project } <span class="code-keyword">from</span> <span class="code-str">'@skillforge/core'</span>;
+
+<span class="code-keyword">async function</span> <span class="code-fn">forgeFutureSkills</span>(dev: <span class="code-prop">Developer</span>) {
+  <span class="code-keyword">const</span> roadmap = <span class="code-keyword">await</span> dev.<span class="code-fn">selectTrack</span>({
+    discipline: <span class="code-str">'FullStack & Cloud'</span>,
+    level: <span class="code-str">'Production-Ready'</span>
+  });
+
+  <span class="code-keyword">return</span> roadmap.<span class="code-fn">buildRealProjects</span>({
+    handsOnHours: <span class="code-num">240</span>,
+    mentorship: <span class="code-keyword">true</span>,
+    portfolioReady: <span class="code-keyword">true</span>
+  });
+}</code></pre>
+            </div>
+
+            <!-- Floating Micro-Metric Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-label">Live Deployment</div>
+                <div class="badge-val">Zero Downtime</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-label">Test Suite</div>
+                <div class="badge-val">99.8% Passing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           Features Section
+           ==================================================================== -->
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Core Methodology</span>
+            <h2 class="section-title">Everything You Need to Succeed</h2>
+            <p class="section-subtitle">
+              A structured roadmap engineered to take you from foundational syntax to shipping industry-standard software products.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <!-- Feature 01: Learn -->
+            <div class="feature-card reveal reveal-delay-1">
+              <div class="feature-top">
+                <div class="feature-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                  </svg>
+                </div>
+                <span class="feature-number">01</span>
+              </div>
+              <h3 class="feature-title">Learn</h3>
+              <p class="feature-desc">
+                Master modern technologies through practical learning. Absorb core architectural patterns, algorithm fundamentals, and contemporary frameworks.
+              </p>
+            </div>
+
+            <!-- Feature 02: Build -->
+            <div class="feature-card reveal reveal-delay-2">
+              <div class="feature-top">
+                <div class="feature-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <span class="feature-number">02</span>
+              </div>
+              <h3 class="feature-title">Build</h3>
+              <p class="feature-desc">
+                Turn your knowledge into real-world projects. Construct comprehensive full-stack applications with scalable architectures and clean codebases.
+              </p>
+            </div>
+
+            <!-- Feature 03: Create -->
+            <div class="feature-card reveal reveal-delay-3">
+              <div class="feature-top">
+                <div class="feature-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <span class="feature-number">03</span>
+              </div>
+              <h3 class="feature-title">Create</h3>
+              <p class="feature-desc">
+                Develop innovative solutions and showcase your work. Deploy production-ready code with responsive design and modern user experience patterns.
+              </p>
+            </div>
+
+            <!-- Feature 04: Grow -->
+            <div class="feature-card reveal reveal-delay-3">
+              <div class="feature-top">
+                <div class="feature-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <span class="feature-number">04</span>
+              </div>
+              <h3 class="feature-title">Grow</h3>
+              <p class="feature-desc">
+                Build a strong professional profile and advance your career. Gain industry credentials, peer code reviews, and tangible evidence of engineering competence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           About Section
+           ==================================================================== -->
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-content reveal">
+            <span class="section-kicker">About SkillForge</span>
+            <h2>Empowering Tomorrow’s Tech Leaders</h2>
+            <p class="about-lead">
+              SkillForge is a modern learning and development platform designed to help aspiring developers turn knowledge into practical skills.
+            </p>
+            <p class="about-body">
+              Traditional courses stop at theory; SkillForge focuses on the actual craft of software construction. We emphasize deliberate practice with modern developer toolchains, version control, semantic web architecture, and clean design systems.
+            </p>
+
+            <div class="about-points">
+              <div class="point-item">
+                <div class="point-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="point-text">
+                  <h4>Practical, Project-First Curriculum</h4>
+                  <p>Every milestone concludes with a real, deployable product for your developer portfolio.</p>
+                </div>
+              </div>
+
+              <div class="point-item">
+                <div class="point-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="point-text">
+                  <h4>Industry-Grade Engineering Standards</h4>
+                  <p>Write semantic markup, clean CSS architecture, and modular JavaScript following best practices.</p>
+                </div>
+              </div>
+
+              <div class="point-item">
+                <div class="point-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="point-text">
+                  <h4>Portfolio & Career Ready</h4>
+                  <p>Prepare for top tech internships and roles with proof-of-work repositories and live demos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Curriculum Blueprint -->
+          <div class="about-visual-card reveal reveal-delay-2">
+            <div class="about-card-header">
+              <div>
+                <span class="about-card-badge">THE SKILLFORGE TRACK</span>
+                <h3 style="font-size: 1.25rem; margin-top: 0.25rem;">Accelerated Learning Stack</h3>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+
+            <div class="interactive-curriculum">
+              <div class="curriculum-node">
+                <div class="node-info">
+                  <span class="node-indicator"></span>
+                  <span class="node-title">01. Web Foundations & UI Layouts</span>
+                </div>
+                <span class="node-status">COMPLETED</span>
+              </div>
+
+              <div class="curriculum-node">
+                <div class="node-info">
+                  <span class="node-indicator"></span>
+                  <span class="node-title">02. Modern JavaScript & DOM Systems</span>
+                </div>
+                <span class="node-status">IN PROGRESS</span>
+              </div>
+
+              <div class="curriculum-node">
+                <div class="node-info">
+                  <span class="node-indicator" style="background: var(--text-muted);"></span>
+                  <span class="node-title">03. Full-Stack API Integration</span>
+                </div>
+                <span class="node-status" style="color: var(--text-muted);">NEXT UP</span>
+              </div>
+
+              <div class="curriculum-node">
+                <div class="node-info">
+                  <span class="node-indicator" style="background: var(--text-muted);"></span>
+                  <span class="node-title">04. Cloud Deployment & CI/CD Pipelines</span>
+                </div>
+                <span class="node-status" style="color: var(--text-muted);">UPCOMING</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           Services Section
+           ==================================================================== -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Specialized Disciplines</span>
+            <h2 class="section-title">What We Help You Master</h2>
+            <p class="section-subtitle">
+              Comprehensive tracks tailored to modern software demands, from polished frontends to scalable infrastructure.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service 1: Web Development -->
+            <div class="service-card reveal reveal-delay-1">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-desc">
+                Architect blazing-fast, accessible web applications utilizing modern HTML5, responsive CSS3 grids, and asynchronous JavaScript frameworks.
+              </p>
+              <a href="#contact" class="service-link">
+                Explore Curriculum
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 2: UI/UX Design -->
+            <div class="service-card reveal reveal-delay-2">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">UI/UX Design</h3>
+              <p class="service-desc">
+                Design intuitive human interfaces with typographic rhythm, visual hierarchy, consistent component tokens, and frictionless user journeys.
+              </p>
+              <a href="#contact" class="service-link">
+                Explore Curriculum
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 3: Cloud & DevOps -->
+            <div class="service-card reveal reveal-delay-3">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Cloud & DevOps</h3>
+              <p class="service-desc">
+                Deploy containerized applications, set up automated CI/CD pipelines, configure edge caching, and manage resilient cloud infrastructure.
+              </p>
+              <a href="#contact" class="service-link">
+                Explore Curriculum
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 4: AI & Machine Learning -->
+            <div class="service-card reveal reveal-delay-3">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4"></path>
+                  <path d="M12 18v4"></path>
+                  <path d="M4.93 4.93l2.83 2.83"></path>
+                  <path d="M16.24 16.24l2.83 2.83"></path>
+                  <path d="M2 12h4"></path>
+                  <path d="M18 12h4"></path>
+                  <path d="M4.93 19.07l2.83-2.83"></path>
+                  <path d="M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">AI & Machine Learning</h3>
+              <p class="service-desc">
+                Integrate intelligent capabilities into web software using state-of-the-art model APIs, embeddings, vector databases, and real-time inference.
+              </p>
+              <a href="#contact" class="service-link">
+                Explore Curriculum
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           Statistics Section (Animated Count-Up)
+           ==================================================================== -->
+      <section class="stats-section" id="statistics">
+        <div class="container stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="10000">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Active Learners</div>
+          </div>
+
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="250">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Completed Projects</div>
+          </div>
+
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="50">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Technologies Covered</div>
+          </div>
+
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="95">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Success Rate</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           Contact Section
+           ==================================================================== -->
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <div>
+              <span class="section-kicker">Get in Touch</span>
+              <h2 class="contact-info-title">Let’s Forge Your Tech Journey</h2>
+              <p>
+                Have questions about our curriculum, internship mentorship, or project tracks? Reach out to our engineering team directly.
+              </p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="detail-label">Direct Inquiries</div>
+                  <div class="detail-val">admissions@skillforge.dev</div>
+                </div>
+              </div>
+
+              <div class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="detail-label">Response Commitment</div>
+                  <div class="detail-val">Within 24 business hours</div>
+                </div>
+              </div>
+
+              <div class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="detail-label">Global Access</div>
+                  <div class="detail-val">Remote & Async First</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card reveal reveal-delay-2">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="e.g. Alex Morgan"
+                  autocomplete="name"
+                  required 
+                />
+                <span class="form-error-msg" id="nameError">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="alex@example.com"
+                  autocomplete="email"
+                  required 
+                />
+                <span class="form-error-msg" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message or Inquiry</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  class="form-textarea" 
+                  placeholder="Tell us about your learning goals or what you'd like to build..."
+                  required
+                ></textarea>
+                <span class="form-error-msg" id="messageError">Please provide your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="formFeedback" class="form-feedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================================
+         Footer
+         ====================================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand Info -->
+          <div class="footer-brand-col">
+            <a href="#home" class="nav-brand" aria-label="SkillForge Home">
+              <div class="brand-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="brand-name">SkillForge<span class="brand-dot">.</span></span>
+            </a>
+            <p>
+              "Build Skills. Build the Future." Transforming ambitious developers into production-ready engineers.
+            </p>
+          </div>
+
+          <!-- Col 2: Navigation Links -->
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#features" class="footer-link">Features</a></li>
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li><a href="#services" class="footer-link">Specializations</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Tracks & Disciplines -->
+          <div>
+            <h4 class="footer-col-title">Disciplines</h4>
+            <ul class="footer-links">
+              <li><a href="#services" class="footer-link">Web Engineering</a></li>
+              <li><a href="#services" class="footer-link">UI/UX Systems</a></li>
+              <li><a href="#services" class="footer-link">Cloud & DevOps</a></li>
+              <li><a href="#services" class="footer-link">AI Engineering</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Community & Social Links -->
+          <div>
+            <h4 class="footer-col-title">Connect</h4>
+            <div class="footer-social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Discord Community">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 6h0a14.5 14.5 0 0 0-4-1.2 11.2 11.2 0 0 0-.5 1.1 13.9 13.9 0 0 0-3 0 11.2 11.2 0 0 0-.5-1.1A14.5 14.5 0 0 0 6 6a15.8 15.8 0 0 0-2.4 9.5c1.4 1 2.8 1.6 4.2 2 .4-.5.7-1.1 1-1.7-.5-.2-1-.4-1.4-.7.1-.1.2-.2.3-.3 2.7 1.3 5.7 1.3 8.4 0 .1.1.2.2.3.3-.4.3-.9.5-1.4.7.3.6.6 1.2 1 1.7 1.4-.4 2.8-1 4.2-2A15.8 15.8 0 0 0 18 6z"></path>
+                  <circle cx="9" cy="12" r="1"></circle>
+                  <circle cx="15" cy="12" r="1"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 SkillForge. Built for SkillCraft Technology Internship Task 01. All rights reserved.
+          </div>
+          <a href="#home" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top of page">
+            <span>Back to top</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vanilla JavaScript Entry Point -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
